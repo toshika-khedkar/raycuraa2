@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <!--GAME SETTINGS-->
+    <div class="container_set">
+        <div class="gamesettings">
+            <h1 class="title">Snake Game</h1>
+            <div class="gamedata">
+                <p>SCORE</p>
+                <p class="aligndata scorevalue" id="scorevalue">0</p>
+            </div>
+
+
+
+
+
+
+            <div class="container" style="border:1px solid grey ;margin-top:50px; box-sizing:border-box ;">
+
+                <div class="row" style="text-align: center;border-radius: 20%;">
+                    <div class="col" id="container-up" style="float: left; margin-left:7rem;">UP</div> <br><br>
+                    <div class="col" id="container-left" style="float: right;">LEFT</div>
+                    <div class="col" id="container-right" style="float: left;">RIGHT</div><br><br>
+                    <div class="col" id="container-down" style="float:center; margin-left:7rem;">DOWN</div>
+                </div>
+
+            </div>
+            <button id="start" class="start">start</button>
+        </div>
+
+        <!--GAME-->
+        <div class="game">
+            <canvas id="snake" width="512" height="512"></canvas>
+            <div class="gameover" id="gameover" style="display:none">
+                <button class="start restart" onclick="restart()">Restart</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
